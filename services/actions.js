@@ -50,7 +50,7 @@ module.exports = {
     },
     // Send event.
     send: function(event, cb = () => null) {
-        fetch('http://localhost:4000/api/v1/webhook', { 
+        fetch('http://api:4000/api/v1/webhook', { 
             method: 'POST', 
             body: JSON.stringify(event),
             headers: { 'Content-Type': 'application/json' }
